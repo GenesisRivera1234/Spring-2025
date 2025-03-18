@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+}
+
+.grid-container {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    height: 100vh;
+    width: 100%;
+}
+
+.item1 {background-color: lavender;}
+.item2 {background-color: darkorchid;}
+.item3 {background-color: mistyrose;}
+.item4 {background-color: tomato;}
+.item5 {background-color: slateblue;}
+.item6 {background-color: khaki;}
+.item7 {background-color: darkslategray;}
+.item8 {background-color: tan;}
+.item9 {background-color: deepskyblue;}
+.item10 {background-color: seagreen;}
+.item11 {background-color: olive;}
+.item12 {background-color: indianred;}
+.item13 {background-color: peru;}
+.item14 {background-color: chocolate;}
