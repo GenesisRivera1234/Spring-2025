@@ -1,19 +1,18 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Select the grid container
-    const gridContainer = document.querySelector('.grid-container');
-
-    // Add an event listener to trigger a bigger identity shift
-    gridContainer.addEventListener('mouseenter', function() {
-        // Change background color of the whole page
-        document.body.style.backgroundColor = "#ffeb3b"; // Yellow background
-        gridContainer.style.transition = "all 1s ease";
-        gridContainer.style.transform = "scale(1.2) rotate(10deg)"; // Scale and rotate entire grid
-    });
-
-    gridContainer.addEventListener('mouseleave', function() {
-        // Reset to original state
-        document.body.style.backgroundColor = "#ffffff"; // White background
-        gridContainer.style.transform = "scale(1) rotate(0deg)"; // Reset transformations
+// JavaScript to change the color of a grid item on click
+document.querySelectorAll('.grid-item').forEach(item => {
+    item.addEventListener('click', () => {
+        // Change background color on click
+        item.style.backgroundColor = getRandomColor();  // Set a random color
     });
 });
+
+// Function to generate random color
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
 
