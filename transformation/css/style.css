@@ -23,6 +23,8 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 8px;
+    height: 150px;
+    width: 150px;
 }
 
 /* Hover effect: Enlarging and changing background color */
@@ -34,38 +36,31 @@ body {
 /* Specific item styles for different shapes */
 .item1 {
     background-color: aqua;
-    height: 150px;
-    width: 150px;
 }
 
 .item2 {
     background-color: plum;
-    height: 150px;
-    width: 150px;
 }
 
 .item3 {
     background-color: lightgreen;
-    height: 150px;
-    width: 150px;
 }
 
 .item4 {
     background-color: lightblue;
-    height: 150px;
-    width: 150px;
     border-radius: 50%;  /* Circle shape */
 }
 
 .item5 {
     background-color: lightcoral;
-    height: 150px;
-    width: 150px;
+    /* square shape (default) */
 }
 
 .item6 {
     background-color: lightgoldenrodyellow;
-    height: 150px;
     width: 150px;
+    height: 150px;
     clip-path: polygon(50% 0%, 100% 100%, 0% 100%);  /* Triangle shape */
+}
+
 }
