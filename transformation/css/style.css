@@ -4,10 +4,11 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);  /* Two columns for a grid layout */
-    grid-template-rows: repeat(2, 1fr);     /* Two rows for a grid layout */
+    grid-template-columns: repeat(3, 1fr);  /* Three equal columns */
+    grid-template-rows: repeat(3, 1fr);     /* Three equal rows */
     height: 100vh;
     width: 100%;
+    gap: 10px;  /* Optional: Add space between the items */
 }
 
 .grid-item {
@@ -17,46 +18,55 @@
     align-items: center;
 }
 
+/* Hover effect */
 .grid-item:hover {
     transform: scale(1.5) rotate(45deg);
-    background-color: #ff6347;  /* Tomato red color */
+    background-color: #ff6347;  /* Tomato red on hover */
 }
 
-/* Item 1 (aqua square) */
+/* Square 1 - Aqua */
 .item1 {
     background-color: aqua;
     width: 150px;
     height: 150px;
 }
 
-/* Item 2 (plum square) */
+/* Square 2 - Plum */
 .item2 {
     background-color: plum;
     width: 150px;
     height: 150px;
 }
 
-/* Item 3 (circle with light blue) */
+/* Square 3 - Light Blue */
 .item3 {
     background-color: lightblue;
+    width: 150px;
+    height: 150px;
+}
+
+/* Circle - Yellow */
+.item4 {
+    background-color: yellow;
     width: 150px;
     height: 150px;
     border-radius: 50%;  /* Circle shape */
 }
 
-/* Item 4 (triangle with yellow) */
-.item4 {
-    background-color: yellow;
+/* Square 4 - Orange */
+.item5 {
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+}
+
+/* Triangle - Green */
+.item6 {
+    background-color: transparent;  /* Make the background transparent for the triangle */
     width: 0;
     height: 0;
     border-left: 75px solid transparent;
     border-right: 75px solid transparent;
-    border-bottom: 150px solid yellow;
-}
-
-/* Hover states (add new colors and effects if desired) */
-.grid-item:hover {
-    transform: scale(1.5) rotate(45deg);
-    background-color: #ff6347;  /* Tomato red on hover */
+    border-bottom: 150px solid green;  /* Triangle shape with green color */
 }
 
