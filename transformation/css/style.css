@@ -1,72 +1,71 @@
 * {
     margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;  /* Light background color for contrast */
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* Three equal columns */
-    grid-template-rows: repeat(3, 1fr);     /* Three equal rows */
-    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);  /* 3 columns */
+    grid-template-rows: repeat(2, 1fr);  /* 2 rows */
+    gap: 10px;
     width: 100%;
-    gap: 10px;  /* Optional: Add space between the items */
+    height: 100vh;
+    padding: 10px;
 }
 
 .grid-item {
-    transition: transform 1s ease, background-color 3s ease;
+    transition: transform 0.5s ease, background-color 0.5s ease;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 8px;
 }
 
-/* Hover effect */
+/* Hover effect: Enlarging and changing background color */
 .grid-item:hover {
-    transform: scale(1.5) rotate(45deg);
-    background-color: #ff6347;  /* Tomato red on hover */
+    transform: scale(1.2) rotate(15deg);
+    background-color: tomato;
 }
 
-/* Square 1 - Aqua */
+/* Specific item styles for different shapes */
 .item1 {
     background-color: aqua;
-    width: 150px;
     height: 150px;
+    width: 150px;
 }
 
-/* Square 2 - Plum */
 .item2 {
     background-color: plum;
-    width: 150px;
     height: 150px;
+    width: 150px;
 }
 
-/* Square 3 - Light Blue */
 .item3 {
-    background-color: lightblue;
-    width: 150px;
+    background-color: lightgreen;
     height: 150px;
+    width: 150px;
 }
 
-/* Circle - Yellow */
 .item4 {
-    background-color: yellow;
-    width: 150px;
+    background-color: lightblue;
     height: 150px;
+    width: 150px;
     border-radius: 50%;  /* Circle shape */
 }
 
-/* Square 4 - Orange */
 .item5 {
-    background-color: orange;
-    width: 150px;
+    background-color: lightcoral;
     height: 150px;
+    width: 150px;
 }
 
-/* Triangle - Green */
 .item6 {
-    background-color: transparent;  /* Make the background transparent for the triangle */
-    width: 0;
-    height: 0;
-    border-left: 75px solid transparent;
-    border-right: 75px solid transparent;
-    border-bottom: 150px solid green;  /* Triangle shape with green color */
+    background-color: lightgoldenrodyellow;
+    height: 150px;
+    width: 150px;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);  /* Triangle shape */
 }
-
