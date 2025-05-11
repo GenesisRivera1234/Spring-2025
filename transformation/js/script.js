@@ -1,7 +1,6 @@
-// When a shape is clicked, it disappears. Click again to bring it back.
+// Simple effect: when clicked, grid items toggle visibility
 document.querySelectorAll('.grid-item').forEach(item => {
   item.addEventListener('click', () => {
     item.classList.toggle('hidden');
   });
 });
-
