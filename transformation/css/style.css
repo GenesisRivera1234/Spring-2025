@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #ffe4e1; /* A soft pink */
+  background-color: red;
   height: 100vh;
   display: flex;
   justify-content: center;
