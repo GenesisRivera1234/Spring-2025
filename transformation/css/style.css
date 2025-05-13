@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: blue !important; /* Blue color */
+  background-color: green;
   height: 100vh;
   display: flex;
   justify-content: center;
