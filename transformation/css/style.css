@@ -63,3 +63,8 @@ body {
   border-radius: 10%;
 }
 
+/* Hidden class (used by JavaScript to dim shapes on click) */
+.hidden {
+  opacity: 0.2;
+  transition: opacity 0.5s ease;
+}
