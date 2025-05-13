@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: red;
+  background-color: #d3a8e1; /* Soft light purple */
   height: 100vh;
   display: flex;
   justify-content: center;
